@@ -19,8 +19,8 @@
             bindings = <
 &kp ESC    &kp NUMBER_1  &kp NUMBER_2  &kp N3        &kp NUMBER_4  &kp NUMBER_5                        &kp N6         &kp N7  &kp N8     &kp N9      &kp NUMBER_0  &kp MINUS
 &kp TAB    &kp Z         &kp Y         &kp U         &kp A         &kp Q                               &kp P          &kp B   &kp M      &kp L       &kp F         &kp J
-&kp LCTRL  &kp C         &kp S         &kp I         &kp E         &kp O                               &kp D          &kp T   &kp N      &kp R       &kp H         &kp AT_SIGN
-&kp LSHFT  &kp V         &kp X         &kp AT_SIGN   &kp AT_SIGN   &kp AT_SIGN   &kp F23      &kp F24  &kp W          &kp G   &kp COMMA  &kp PERIOD  &kp K         &kp RSHFT
+&kp LCTRL  &kp C         &kp S         &kp I         &kp E         &kp O                               &kp D          &kp T   &kp N      &kp R       &kp H         &de_eszett
+&kp LSHFT  &kp V         &kp X         &de_ue        &de_ae        &de_oe        &kp F23      &kp F24  &kp W          &kp G   &kp COMMA  &kp PERIOD  &kp K         &kp RSHFT
                                        &kp LEFT_ALT  &kp LGUI      &mo 1         &kp SPACE    &kp RET  &kp BACKSPACE  &tog 2  &tog 3
             >;
         };
@@ -30,7 +30,7 @@
 &kp ESC    &kp F1        &kp F2         &kp F3        &kp F4           &kp F5                               &kp F6                &kp F7                 &kp F8          &kp F9            &kp F10  &kp UNDERSCORE
 &kp GRAVE  &kp HASH      &kp BACKSLASH  &kp PIPE      &kp EQUAL        &kp SQT                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp F11  &kp F12
 &kp CARET  &kp ASTERISK  &kp SLASH      &kp QUESTION  &kp EXCLAMATION  &kp DOUBLE_QUOTES                    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &kp F13  &kp F14
-&kp S      &kp E         &kp DOLLAR     &kp PERCENT   &kp AT_SIGN      &kp AMPERSAND      &trans    &trans  &kp PLUS              &kp MINUS              &kp SEMICOLON   &kp COLON         &kp F15  &kp F16
+&kp S      &euro_sign    &kp DOLLAR     &kp PERCENT   &kp AT_SIGN      &kp AMPERSAND      &trans    &trans  &kp PLUS              &kp MINUS              &kp SEMICOLON   &kp COLON         &kp F15  &kp F16
                                         &trans        &trans           &trans             &trans    &trans  &trans                &trans                 &trans
             >;
         };
