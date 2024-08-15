@@ -4,12 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/lily58.h"
 #include "zmk-helpers/unicode-chars/german.dtsi"
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     keymap {
@@ -29,7 +29,7 @@
             bindings = <
 &kp RC(L)  &kp RS(RC(T))  &kp RC(W)      &kp RS(RC(TAB))  &kp RC(TAB)      &kp RC(T)                            &kp F6                &kp F7                 &kp F8          &kp F9            &kp PLUS      &kp MINUS
 &kp GRAVE  &kp HASH       &kp BACKSLASH  &kp PIPE         &kp EQUAL        &kp SQT                              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp ASTERISK  &kp SLASH
-&kp CARET  &kp ASTERISK   &kp SLASH      &kp QUESTION     &kp EXCLAMATION  &kp DOUBLE_QUOTES                    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT      &kp RIGHT
+&kp LCTRL  &kp ASTERISK   &kp SLASH      &kp QUESTION     &kp EXCLAMATION  &kp DOUBLE_QUOTES                    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT      &kp RIGHT
 &kp LSHFT  &kp E          &kp DOLLAR     &kp PERCENT      &kp AT_SIGN      &kp AMPERSAND      &trans    &trans  &kp PERIOD            &kp PERIOD             &kp SEMICOLON   &kp COLON         &kp UP_ARROW  &kp DOWN
                                          &trans           &trans           &trans             &trans    &trans  &trans                &trans                 &trans
             >;
