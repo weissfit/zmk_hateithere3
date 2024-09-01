@@ -27,10 +27,10 @@
 
         s_char {
             bindings = <
-&kp LA(F4)  &kp RS(RC(T))  &kp RC(W)   &kp RS(RC(TAB))  &kp RC(TAB)      &kp RC(T)                                  &kp BACKSLASH         &kp PIPE               &kp SLASH       &kp EQUAL         &kp PLUS      &kp MINUS
-&kp TAB     &kp LC(L)      &kp RC(F)   &kp LC(X)        &kp LC(C)        &kp LC(V)                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp ASTERISK  &kp SLASH
-&kp LCTRL   &kp LA(Z)      &kp LC(Z)   &kp QUESTION     &kp EXCLAMATION  &kp DOUBLE_QUOTES                          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT      &kp RIGHT
-&kp LSHFT   &kp E          &kp DOLLAR  &kp PERCENT      &kp AT_SIGN      &kp AMPERSAND      &to 1        &to 0      &kp ASTERISK          &kp APOSTROPHE         &kp SEMICOLON   &kp COLON         &kp UP_ARROW  &kp DOWN
+&kp LA(F4)  &kp RS(RC(T))      &kp RC(W)   &kp RS(RC(TAB))  &kp RC(TAB)      &kp RC(T)                                  &kp BACKSLASH         &kp PIPE               &kp SLASH       &kp EQUAL         &kp PLUS      &kp MINUS
+&kp TAB     &kp LC(L)          &kp RC(F)   &kp LC(X)        &kp LC(C)        &kp LC(V)                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp ASTERISK  &kp SLASH
+&kp LCTRL   &kp LA(Z)          &kp LC(Z)   &kp QUESTION     &kp EXCLAMATION  &kp DOUBLE_QUOTES                          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT      &kp RIGHT
+&kp LSHFT   &kp UNICODE_20AC   &kp DOLLAR  &kp PERCENT      &kp AT_SIGN      &kp AMPERSAND      &to 1        &to 0      &kp ASTERISK          &kp APOSTROPHE         &kp SEMICOLON   &kp COLON         &kp UP_ARROW  &kp DOWN
                                        &trans           &trans           &mo 1              &kp SPACE    &kp ENTER  &kt DELETE            &trans                 &trans
             >;
         };
