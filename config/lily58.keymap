@@ -29,7 +29,7 @@
             bindings = <
 &kp LA(F4)  &kp RS(RC(T))  &kp RC(W)   &kp RS(RC(TAB))  &kp RC(TAB)      &kp RC(T)                                  &kp BACKSLASH         &kp PIPE               &kp SLASH       &kp EQUAL         &kp PLUS      &kp MINUS
 &kp TAB     &kp LC(L)      &kp RC(F)   &kp LC(X)        &kp LC(C)        &kp LC(V)                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp ASTERISK  &kp SLASH
-&kp LCTRL   &kp LA(Z)      &kp LC(Z)   &kp QUESTION     &kp EXCLAMATION  &kp DOUBLE_QUOTES                          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT      &kp RIGHT
+&kp LCTRL   &kp LA(Z)      &kp LC(A)   &kp QUESTION     &kp EXCLAMATION  &kp DOUBLE_QUOTES                          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT      &kp RIGHT
 &kp LSHFT   &kp E          &kp DOLLAR  &kp PERCENT      &kp AT_SIGN      &kp AMPERSAND      &tog 1       &to 0      &kp ASTERISK          &kp APOSTROPHE         &kp SEMICOLON   &kp COLON         &kp UP_ARROW  &kp DOWN
                                        &trans           &trans           &mo 1              &kp SPACE    &kp ENTER  &kp DELETE            &trans                 &trans
             >;
@@ -57,11 +57,11 @@
 
         clear_bt {
             bindings = <
-&none      &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT                          &bt BT_CLR_ALL  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
-&kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT                          &kp LSHFT       &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
-&kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT                          &kp LSHFT       &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
-&kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &to 0        &to 0      &soft_off       &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
-                                 &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT    &kp LSHFT  &kp LSHFT       &kp LSHFT  &kp LSHFT
+&none  &none  &none  &none  &none  &none                  &bt BT_CLR_ALL  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none           &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none           &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &soft_off       &none  &none  &none  &none  &none
+                     &none  &none  &none  &none    &none  &none           &none  &none
             >;
         };
     };
