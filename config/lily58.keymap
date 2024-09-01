@@ -57,7 +57,7 @@
 
         clear_bt {
             bindings = <
-&kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT                          &bt BT_CLR_ALL  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
+&none      &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT                          &bt BT_CLR_ALL  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
 &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT                          &kp LSHFT       &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
 &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT                          &kp LSHFT       &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
 &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &to 0        &to 0      &soft_off       &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT  &kp LSHFT
