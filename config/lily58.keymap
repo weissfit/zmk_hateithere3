@@ -37,11 +37,11 @@
 
         utility {
             bindings = <
-&kp ESC    &bt BT_SEL 0  &kp F1   &kp F2   &kp F3   &kp F4                         &kp HOME   &kp N7  &kp N8     &kp N9      &kp PLUS      &kp MINUS
-&kp TAB    &bt BT_SEL 1  &kp F5   &kp F6   &kp F7   &kp F8                         &kp PG_UP  &kp D   &kp N5     &kp N6      &kp ASTERISK  &kp SLASH
-&kp LCTRL  &bt BT_SEL 2  &kp F9   &kp F10  &kp F11  &kp F12                        &kp PG_DN  &kp N1  &kp N2     &kp N3      &kp LEFT      &kp RIGHT
-&kp LSHFT  &mo 4         &kp F13  &kp F14  &kp F15  &kp F16  &tog 2       &to 0    &kp END    &kp N0  &kp COMMA  &kp PERIOD  &kp UP_ARROW  &kp DOWN
-                                  &trans   &trans   &mo 1    &kp SPACE    &kp RET  &trans     &trans  &trans
+&kp ESC    &bt BT_SEL 0  &kp F1   &kp F2   &kp F3   &kp F4                         &kp HOME   &kp N7        &kp N8     &kp N9      &kp PLUS      &kp MINUS
+&kp TAB    &bt BT_SEL 1  &kp F5   &kp F6   &kp F7   &kp F8                         &kp PG_UP  &kp NUMBER_4  &kp N5     &kp N6      &kp ASTERISK  &kp SLASH
+&kp LCTRL  &bt BT_SEL 2  &kp F9   &kp F10  &kp F11  &kp F12                        &kp PG_DN  &kp N1        &kp N2     &kp N3      &kp LEFT      &kp RIGHT
+&kp LSHFT  &mo 4         &kp F13  &kp F14  &kp F15  &kp F16  &tog 2       &to 0    &kp END    &kp N0        &kp COMMA  &kp PERIOD  &kp UP_ARROW  &kp DOWN
+                                  &trans   &trans   &mo 1    &kp SPACE    &kp RET  &trans     &trans        &trans
             >;
         };
 
