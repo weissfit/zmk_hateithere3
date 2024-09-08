@@ -31,7 +31,7 @@
 &kp TAB     &kp LC(L)      &kp RC(F)   &kp LC(X)        &kp LC(C)        &kp LC(V)                                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp ASTERISK  &kp SLASH
 &kp LCTRL   &kp LA(Z)      &kp LC(A)   &kp QUESTION     &kp EXCLAMATION  &kp DOUBLE_QUOTES                           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT      &kp RIGHT
 &kp LSHFT   &kp E          &kp DOLLAR  &kp PERCENT      &kp AT_SIGN      &kp AMPERSAND      &kp F23      &kp F24     &kp CARET             &kp APOSTROPHE         &kp SEMICOLON   &kp COLON         &kp ESCAPE    &kp DOWN
-                                       &trans           &trans           &mo 1              &kp SPACE    &kp DELETE  &trans                &trans                 &trans
+                                       &trans           &trans           &kp LCTRL          &kp SPACE    &kp DELETE  &trans                &trans                 &trans
             >;
         };
 
