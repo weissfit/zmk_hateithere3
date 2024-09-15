@@ -27,11 +27,11 @@
 
         s_char {
             bindings = <
-&kp LA(F4)  &kp RS(RC(T))  &kp RC(W)   &kp RS(RC(TAB))  &kp RC(TAB)      &kp RC(T)                                   &kp BACKSLASH         &kp PIPE               &kp SLASH       &kp EQUAL        &kp PLUS      &kp MINUS
-&kp TAB     &kp LC(L)      &kp RC(F)   &kp LC(X)        &kp LC(C)        &kp LC(V)                                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp ASTERISK  &kp SLASH
-&kp LCTRL   &kp LA(Z)      &kp LC(A)   &kp QUESTION     &kp EXCLAMATION  &kp DOUBLE_QUOTES                           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp ESC          &kp LEFT      &kp RIGHT
-&kp LSHFT   &kp E          &kp DOLLAR  &kp PERCENT      &kp AT_SIGN      &kp AMPERSAND      &kp F23      &kp F24     &kp CARET             &kp APOSTROPHE         &kp SEMICOLON   &kp COLON        &kp UP        &kp DOWN
-                                       &trans           &trans           &trans             &kp SPACE    &kp DELETE  &trans                &trans                 &trans
+&kp LA(F4)  &kp RS(RC(T))  &kp RC(W)   &kp RS(RC(TAB))  &kp RC(TAB)      &kp RC(T)                                   &kp BACKSLASH         &kp NUMBER_6  &kp SLASH       &kp EQUAL        &kp PLUS      &kp MINUS
+&kp TAB     &kp LC(L)      &kp RC(F)   &kp LC(X)        &kp LC(C)        &kp LC(V)                                   &kp LEFT_PARENTHESIS  &kp P         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp ASTERISK  &kp SLASH
+&kp LCTRL   &kp LA(Z)      &kp LC(A)   &kp QUESTION     &kp EXCLAMATION  &kp DOUBLE_QUOTES                           &kp LEFT_BRACKET      &kp D         &kp LESS_THAN   &kp ESC          &kp LEFT      &kp RIGHT
+&kp LSHFT   &kp E          &kp DOLLAR  &kp PERCENT      &kp AT_SIGN      &kp AMPERSAND      &kp F23      &kp F24     &kp CARET             &kp W         &kp SEMICOLON   &kp COLON        &kp UP        &kp DOWN
+                                       &trans           &trans           &trans             &kp SPACE    &kp DELETE  &trans                &trans        &trans
             >;
         };
 
