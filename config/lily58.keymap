@@ -4,12 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/lily58.h"
 #include "zmk-helpers/unicode-chars/german.dtsi"
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     keymap {
@@ -27,41 +27,11 @@
 
         s_char {
             bindings = <
-&kp LA(F4)  &kp RS(RC(T))  &kp RC(W)   &kp RS(RC(TAB))  &kp RC(TAB)      &kp RC(T)                                   &kp BACKSLASH         &kp NUMBER_6  &kp SLASH       &kp EQUAL        &kp PLUS      &kp MINUS
-&kp TAB     &kp LC(L)      &kp RC(F)   &kp LC(X)        &kp LC(C)        &kp LC(V)                                   &kp LEFT_PARENTHESIS  &kp P         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp ASTERISK  &kp SLASH
-&kp LCTRL   &kp LA(Z)      &kp LC(A)   &kp QUESTION     &kp EXCLAMATION  &kp DOUBLE_QUOTES                           &kp LEFT_BRACKET      &kp D         &kp LESS_THAN   &kp ESC          &kp LEFT      &kp RIGHT
-&kp LSHFT   &kp E          &kp DOLLAR  &kp PERCENT      &kp AT_SIGN      &kp AMPERSAND      &kp F23      &kp F24     &kp CARET             &kp W         &kp SEMICOLON   &kp COLON        &kp UP        &kp DOWN
-                                       &trans           &trans           &trans             &kp SPACE    &kp DELETE  &trans                &trans        &trans
-            >;
-        };
-
-        utility {
-            bindings = <
-&kp ESC    &bt BT_SEL 0  &kp F1   &kp F2   &kp F3   &kp F4                       &kp HOME   &kp N7        &kp N8     &kp N9      &kp PLUS      &kp MINUS
-&kp TAB    &bt BT_SEL 1  &kp F5   &kp F6   &kp F7   &kp F8                       &kp PG_UP  &kp NUMBER_4  &kp N5     &kp N6      &kp ASTERISK  &kp SLASH
-&kp LCTRL  &bt BT_SEL 2  &kp F9   &kp F10  &kp F11  &kp F12                      &kp PG_DN  &kp N1        &kp N2     &kp N3      &kp LEFT      &kp RIGHT
-&kp LSHFT  &mo 4         &kp F13  &kp F14  &kp F15  &kp F16  &kp F23    &kp F24  &kp END    &kp N0        &kp COMMA  &kp PERIOD  &kp UP_ARROW  &kp DOWN
-                                  &trans   &trans   &mo 1    &trans     &trans   &trans     &trans        &trans
-            >;
-        };
-
-        qwerty {
-            bindings = <
-&kp ESC           &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                      &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &trans
-&kp TAB           &kp Q   &kp W   &kp E   &kp R   &kp T                       &kp Y   &kp U   &kp I      &kp O    &kp P     &kp ENTER
-&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F   &kp G                       &kp H   &kp J   &kp K      &kp L    &kp LEFT  &kp RIGHT
-&kp LSHFT         &kp Y   &kp X   &kp C   &kp V   &kp B   &kp F23    &kp F24  &kp N   &kp M   &kp COMMA  &kp DOT  &kp UP    &kp DOWN
-                                  &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans
-            >;
-        };
-
-        clear_bt {
-            bindings = <
-&none  &none  &none  &none  &none  &none                  &bt BT_CLR_ALL  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none           &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none           &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &soft_off       &none  &none  &none  &none  &none
-                     &none  &none  &none  &none    &none  &none           &none  &none
+&kp LA(F4)  &kp RS(RC(T))  &kp RC(W)   &kp RS(RC(TAB))  &kp RC(TAB)      &kp RC(T)                                   &kp BACKSLASH  &kp PIPE  &kp SLASH  &kp EQUAL      &kp PLUS   &kp MINUS
+&kp TAB     &kp LC(L)      &kp RC(F)   &kp LC(X)        &kp LC(C)        &kp LC(V)                                   &kp DOT        &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp SLASH
+&kp LCTRL   &mo 4          &kp LC(A)   &kp QUESTION     &kp EXCLAMATION  &kp DOUBLE_QUOTES                           &kp DOT        &kp LEFT  &kp UP     &kp DOWN       &kp RIGHT  &kp DOT
+&kp LSHFT   &kp E          &kp DOLLAR  &kp PERCENT      &kp AT_SIGN      &kp AMPERSAND      &kp F23      &kp F24     &kp DOT        &kp LEFT  &kp UP     &kp SEMICOLON  &kp COLON  &kp ESC
+                                       &trans           &trans           &trans             &kp SPACE    &kp DELETE  &trans         &trans    &trans
             >;
         };
 
@@ -75,9 +45,19 @@
             >;
         };
 
+        brackets {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LBKT  &kp RBKT  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans
+            >;
+        };
+
         fn {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp F1   &kp F2   &kp F3   &kp F4   &trans
+&trans  &mo 6   &trans  &trans  &trans  &trans                    &trans  &kp F1   &kp F2   &kp F3   &kp F4   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp F5   &kp F6   &kp F7   &kp F8   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp F9   &kp F10  &kp F11  &kp F12  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp F13  &kp F14  &kp F15  &kp F16  &trans
@@ -85,13 +65,33 @@
             >;
         };
 
-        brackets {
+        utility {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&kp ESC    &bt BT_SEL 0  &kp F1   &kp F2   &kp F3   &kp F4                       &kp HOME   &kp N7        &kp N8     &kp N9      &kp PLUS      &kp MINUS
+&kp TAB    &bt BT_SEL 1  &kp F5   &kp F6   &kp F7   &kp F8                       &kp PG_UP  &kp NUMBER_4  &kp N5     &kp N6      &kp ASTERISK  &kp SLASH
+&kp LCTRL  &bt BT_SEL 2  &kp F9   &kp F10  &kp F11  &kp F12                      &kp PG_DN  &kp N1        &kp N2     &kp N3      &kp LEFT      &kp RIGHT
+&kp LSHFT  &mo 7         &kp F13  &kp F14  &kp F15  &kp F16  &kp F23    &kp F24  &kp END    &kp N0        &kp COMMA  &kp PERIOD  &kp UP_ARROW  &kp DOWN
+                                  &trans   &trans   &mo 1    &trans     &trans   &trans     &trans        &trans
+            >;
+        };
+
+        clear_bt {
+            bindings = <
+&none  &none  &none  &none  &none  &none                  &bt BT_CLR_ALL  &none  &none  &none  &none  &bt BT_SEL 0
+&none  &none  &none  &none  &none  &none                  &none           &none  &none  &none  &none  &bt BT_SEL 1
+&none  &none  &none  &none  &none  &none                  &none           &none  &none  &none  &none  &bt BT_SEL 2
+&none  &none  &none  &none  &none  &none  &none    &none  &soft_off       &none  &none  &none  &none  &bt BT_SEL 3
+                     &none  &none  &none  &none    &none  &none           &none  &none
+            >;
+        };
+
+        qwerty {
+            bindings = <
+&kp ESC           &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                      &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &trans
+&kp TAB           &kp Q   &kp W   &kp E   &kp R   &kp T                       &kp Y   &kp U   &kp I      &kp O    &kp P     &kp ENTER
+&kp LEFT_CONTROL  &kp A   &kp S   &kp D   &kp F   &kp G                       &kp H   &kp J   &kp K      &kp L    &kp LEFT  &kp RIGHT
+&kp LSHFT         &kp Y   &kp X   &kp C   &kp V   &kp B   &kp F23    &kp F24  &kp N   &kp M   &kp COMMA  &kp DOT  &kp UP    &kp DOWN
+                                  &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans
             >;
         };
     };
