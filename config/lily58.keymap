@@ -50,7 +50,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans                &trans                 &trans         &trans            &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LBKT              &kp RBKT               &kp LT         &kp GREATER_THAN  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBRC       &kp RBRC          &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp SLASH             &kp PIPE               &kp BACKSLASH  &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp SLASH             &kp PIPE               &kp BACKSLASH  &kp TILDE         &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans                &trans
             >;
         };
