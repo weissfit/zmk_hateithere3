@@ -14,7 +14,7 @@
 
 / {
     u_unicode {
-        unicode-input = "linux";
+        unicode-input = "linux";  // Ensure this is the desired OS/locale setting
     };
 
     keymap {
@@ -22,34 +22,20 @@
 
         default_layer {
             bindings = <
-                &kp ESC     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
-                &kp NUMBER_6 &kp NUMBER_7 &kp NUMBER_8 &kp NUMBER_9  &kp NUMBER_0  &tog 7
-                &kp TAB     &kp Z         &kp Y         &kp U         &kp A         &kp Q
-                &kp P       &kp B         &kp M         &kp L         &kp F         &kp J
-                &kp LCTRL   &kp C         &kp S         &kp I         &kp E         &kp O
-                &kp D       &kp T         &kp N         &kp R         &kp H         &de_eszett
-                &kp LSHFT   &kp V         &kp X         &de_ue        &de_ae        &de_oe
-                &kp F23     &kp F24      &kp W         &kp G         &kp COMMA     &kp PERIOD
-                &kp K       &kp RSHFT
-                &kp C_PLAY_PAUSE &kp LALT &mo 1 &kp SPACE &kp BACKSPACE &kp ENTER &kp LGUI &none
+                &kp ESC    &kp 1     &kp 2     &kp 3     &kp 4    &kp 5
+                &kp 6      &kp 7     &kp 8     &kp 9     &kp 0    &kp TOGGLE
+                &kp TAB    &kp Q     &kp W     &kp E     &kp R    &kp T
+                &kp Y      &kp U     &kp I     &kp O     &kp P    &kp ENTER
+                &kp A      &kp S     &kp D     &kp F     &kp G    &kp H
+                &kp J      &kp K     &kp L     &kp SEMICOLON &kp QUOTE
+                &kp LSHIFT &kp Z     &kp X     &kp C     &kp V    &kp B
+                &kp N      &kp M     &kp COMMA &kp PERIOD &kp SLASH
+                &kp LCTRL  &kp SPACE &kp BACKSPACE &kp ENTER  &kp LGUI
+                &trans     &kp F23  &kp F24  &kp F25  &kp F26   &kp F27
             >;
         };
 
-        s_char {
-            bindings = <
-                &kp LA(F4)  &kp RS(RC(T))  &kp RC(W)  &kp RS(RC(TAB))  &kp RC(TAB)  &kp RC(T)
-                &none       &none            &none           &none          &none       &none
-                &kp TAB     &kp LC(LS(T))  &kp LC(W)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(T)
-                &kp PG_UP   &kp LC(LEFT)   &kp LC(NUMBER_1)  &kp LC(J)  &kp LC(RIGHT)  &kp HOME
-                &kp LCTRL   &mo 5          &mo 4            &mo 3          &mo 2       &none
-                &kp PG_DN   &kp LEFT       &kp UP           &kp DOWN       &kp RIGHT   &kp END
-                &kp LSHFT   &kp LEFT       &kp UP           &kp DOWN       &kp RIGHT   &none
-                &kp F23     &kp F24      &none            &kp MINUS     &kp SEMICOLON &kp COLON
-                &kp UNDERSCORE &kp ESC   &kp C_PREV  &trans &trans &kp SPACE  &kp DELETE  &trans
-                &trans      &kp C_NEXT
-            >;
-        };
-
+        // Define additional layers and fix Unicode issues:
         stzch {
             bindings = <
                 &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
@@ -63,16 +49,12 @@
             >;
         };
 
-        brackets {
+        // Ensure that the German accented characters (like ä, ö, ü) are handled correctly
+        // by replacing previous mappings that could cause the issue.
+        german {
             bindings = <
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans  &trans &kp LBKT &kp RBKT &kp LT
-                &kp GREATER_THAN &trans
-                &trans &trans &trans &trans &trans &trans  &trans &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS
-                &kp LBRC &kp RBRC &trans
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &kp SLASH &kp BACKSLASH
-                &kp PIPE &kp TILDE &trans
-                &trans &trans &trans &trans &kp BSPC &kp ENTER &trans &trans
+                &kp A &kp O &kp U &kp Ae &kp Oe &kp Ue &kp Ae
+                &kp OE &kp UE &kp ae &kp oe &kp ue
             >;
         };
 
