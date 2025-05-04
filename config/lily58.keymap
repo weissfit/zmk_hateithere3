@@ -13,18 +13,23 @@
 #define HOST_OS 1
 
 / {
+    u_unicode {
+        unicode-input = "linux";
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp ESC    &kp NUMBER_1  &kp NUMBER_2  &kp N3            &kp NUMBER_4  &kp NUMBER_5                              &kp N6     &kp N7    &kp N8     &kp N9      &kp NUMBER_0  &tog 7
-&kp TAB    &kp Z         &kp Y         &kp U             &kp A         &kp Q                                     &kp P      &kp B     &kp M      &kp L       &kp F         &kp J
-&kp LCTRL  &kp C         &kp S         &kp I             &kp E         &kp O                                     &kp D      &kp T     &kp N      &kp R       &kp H         &de_eszett
-&kp LSHFT  &kp V         &kp X         &de_ue            &de_ae        &de_oe        &kp F23      &kp F24        &kp W      &kp G     &kp COMMA  &kp PERIOD  &kp K         &kp RSHFT
-                                       &kp C_PLAY_PAUSE  &kp LALT      &mo 1         &kp SPACE    &kp BACKSPACE  &kp ENTER  &kp LGUI  &none
+                &kp ESC    &kp NUMBER_1  &kp NUMBER_2  &kp N3            &kp NUMBER_4  &kp NUMBER_5                              &kp N6     &kp N7    &kp N8     &kp N9      &kp NUMBER_0  &tog 7
+                &kp TAB    &kp Z         &kp Y         &kp U             &kp A         &kp Q                                     &kp P      &kp B     &kp M      &kp L       &kp F         &kp J
+                &kp LCTRL  &kp C         &kp S         &kp I             &kp E         &kp O                                     &kp D      &kp T     &kp N      &kp R       &kp H         &de_eszett
+                &kp LSHFT  &kp V         &kp X         &de_ue            &de_ae        &de_oe        &kp F23      &kp F24        &kp W      &kp G     &kp COMMA  &kp PERIOD  &kp K         &kp RSHFT
+                                               &kp C_PLAY_PAUSE  &kp LALT      &mo 1         &kp SPACE    &kp BACKSPACE  &kp ENTER  &kp LGUI  &none
             >;
         };
+
 
         s_char {
             bindings = <
