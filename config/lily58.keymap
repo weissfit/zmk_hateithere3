@@ -71,7 +71,7 @@
 
         s_char {
             bindings = <
-&kp LA(F4)  &kp LG(N1)     &kp LG(N2)  &kp LG(N3)       &kp LG(N4)   &kp LG(N5)                           &kp LG(N6)  &kp LG(N7)    &kp LG(N8)        &kp LG(N9)  &kp LG(N0)      &none
+&kp LG(F4)  &kp LG(N1)     &kp LG(N2)  &kp LG(N3)       &kp LG(N4)   &kp LG(N5)                           &kp LG(N6)  &kp LG(N7)    &kp LG(N8)        &kp LG(N9)  &kp LG(N0)      &none
 &kp TAB     &kp LC(LS(T))  &kp LC(W)   &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(T)                            &kp PG_UP   &kp LC(LEFT)  &kp LC(NUMBER_1)  &kp LC(J)   &kp LC(RIGHT)   &kp HOME
 &kp LCTRL   &mo 5          &mo 4       &mo 3            &mo 2        &none                                &kp PG_DN   &kp LEFT      &kp UP            &kp DOWN    &kp RIGHT       &kp END
 &kp LSHFT   &kp LEFT       &kp UP      &kp DOWN         &kp RIGHT    &none       &kp F23      &kp F24     &none       &kp MINUS     &kp SEMICOLON     &kp COLON   &kp UNDERSCORE  &kp ESC
