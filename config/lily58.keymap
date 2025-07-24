@@ -10,7 +10,6 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/lily58.h"
 #include "zmk-helpers/unicode-chars/german.dtsi"
-
 #define HOST_OS 1
 
 / {
