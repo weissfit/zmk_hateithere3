@@ -1,12 +1,5 @@
-name: Build User Config
-
-on:
-  workflow_dispatch:
-
+name: Build Firmware
+on: [workflow_dispatch]
 jobs:
   build:
-    runs-on: self-hosted
-    steps:
-      - uses: actions/checkout@v2
-      - name: Run reusable workflow
-        uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
