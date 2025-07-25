@@ -1,6 +1,13 @@
 name: Build Firmware
-runs-on: self-hosted
-on: [workflow_dispatch]
+
+on:
+  workflow_dispatch:
+
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run reusable workflow
+        run: |
+          # You can call the reusable workflow using GitHub CLI or another method if needed
