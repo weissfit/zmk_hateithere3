@@ -1,29 +1,5 @@
 name: Build Firmware
-
-on:
-  workflow_dispatch:
-
+on: [workflow_dispatch]
 jobs:
   build:
-    runs-on: self-hosted
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up environment
-        run: |
-          # Install any necessary dependencies
-          sudo apt-get update
-          sudo apt-get install -y python3 pip
-          pip install west
-
-          # Initialize West and fetch ZMK repository
-          west init -m https://github.com/zmkfirmware/zmk.git
-          cd zmk
-          west update
-
-      - name: Build firmware
-        run: |
-          # Navigate to the ZMK directory
-          cd zmk
-
-          # Build the firmware
-          west build -b your_board_name
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
