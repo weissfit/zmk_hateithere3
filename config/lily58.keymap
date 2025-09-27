@@ -19,21 +19,21 @@
 
         default_layer {
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3            &kp N4           &kp N5                                       &kp N6     &kp N7    &kp N8     &kp N9   &kp N0  &kp F22
-&kp TAB    &kp Z   &kp Y   &kp U             &kp A            &kp Q                                        &kp P      &kp B     &kp M      &kp L    &kp F   &kp J
-&kp LCTRL  &kp C   &kp S   &kp I             &kp E            &kp O                                        &kp D      &kp T     &kp N      &kp R    &kp H   &kp DE_SZ
-&kp LSHFT  &kp V   &kp X   &kp DE_U_UMLAUT   &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp F23      &kp F24        &kp W      &kp G     &kp COMMA  &kp DOT  &kp K   &kp RSHFT
-                           &kp C_PLAY_PAUSE  &kp LGUI         &mo 1            &kp SPACE    &kp BACKSPACE  &kp ENTER  &kp LALT  &none
+&kp ESC    &kp DE_N1  &kp DE_N2  &kp N3            &kp DE_N4        &kp DE_N5                                    &kp DE_N6  &kp DE_N7  &kp DE_N8     &kp DE_N9      &kp DE_N0  &kp F22
+&kp TAB    &kp DE_Z   &kp DE_Y   &kp DE_U          &kp DE_A         &kp DE_Q                                     &kp DE_P   &kp DE_B   &kp DE_M      &kp DE_L       &kp DE_F   &kp DE_J
+&kp LCTRL  &kp DE_C   &kp DE_S   &kp DE_I          &kp DE_E         &kp DE_O                                     &kp DE_D   &kp DE_T   &kp DE_N      &kp DE_R       &kp DE_H   &kp DE_SZ
+&kp LSHFT  &kp DE_V   &kp DE_X   &kp DE_U_UMLAUT   &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp F23      &kp F24        &kp DE_W   &kp DE_G   &kp DE_COMMA  &kp DE_PERIOD  &kp DE_K   &kp RSHFT
+                                 &kp C_PLAY_PAUSE  &kp LGUI         &mo 1            &kp SPACE    &kp BACKSPACE  &kp ENTER  &kp LALT   &none
             >;
         };
 
         s_char {
             bindings = <
-&trans     &kp LG(N6)     &kp LG(N7)  &kp LG(N8)       &kp LG(N9)   &kp LG(N0)                           &none      &none         &none             &none      &none           &none
-&kp TAB    &kp LC(LS(T))  &kp LC(W)   &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(T)                            &kp PG_UP  &kp LC(LEFT)  &kp LC(NUMBER_1)  &kp LC(J)  &kp LC(RIGHT)   &kp HOME
-&kp LCTRL  &mo 5          &mo 4       &mo 3            &mo 2        &none                                &kp PG_DN  &kp LEFT      &kp UP            &kp DOWN   &kp RIGHT       &kp END
-&kp LSHFT  &kp LEFT      &kp UP            &kp DOWN   &kp RIGHT    &kp LG(N0)  &kp F23      &kp F24     &none      &kp MINUS     &kp SEMICOLON     &kp COLON  &kp UNDERSCORE  &kp ESC
-                                      &kp C_PREV       &trans       &trans      &kp SPACE    &kp DELETE  &trans     &trans        &kp C_NEXT
+&trans     &kp LG(N6)     &kp LG(N7)  &kp LG(N8)       &kp LG(N9)   &kp LG(N0)                             &none      &none         &none             &none      &none           &none
+&kp TAB    &kp LC(LS(T))  &kp LC(W)   &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(T)                              &kp PG_UP  &kp LC(LEFT)  &kp LC(NUMBER_1)  &kp LC(J)  &kp LC(RIGHT)   &kp HOME
+&kp LCTRL  &mo 5          &mo 4       &mo 3            &mo 2        &none                                  &kp PG_DN  &kp LEFT      &kp UP            &kp DOWN   &kp RIGHT       &kp END
+&kp LSHFT  &kp LEFT       &kp UP      &kp DOWN         &kp RIGHT    &kp LG(DE_Q)  &kp F23      &kp F24     &none      &kp MINUS     &kp SEMICOLON     &kp COLON  &kp UNDERSCORE  &kp ESC
+                                      &kp C_PREV       &trans       &trans        &kp SPACE    &kp DELETE  &trans     &trans        &kp C_NEXT
             >;
         };
 
